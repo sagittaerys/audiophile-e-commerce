@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.body {
+  font-family: var(--font-manrope);
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -121,13 +132,3 @@
   }
 }
 
-.body {
-  font-family: var(--font-manrope);
-}
-
-@media screen and (min-width: 1400px) {
-  .container {
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-}

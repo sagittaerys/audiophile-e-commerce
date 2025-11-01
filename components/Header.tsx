@@ -2,26 +2,26 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Header() {
   return (
-    <div className="container  mx-auto absolute fixed z-10 bg-[#0E0E0E]  text-[#FFFFFF] ">
+    <div className="container  fixed z-10 bg-[#0E0E0E]  text-[#FFFFFF] ">
 
-      <div className=" mx-auto flex items-center justify-evenly w-[1109.83px] py-[32px]   border-b border-[#FFFFFF]/20">
+      <div className="mx-auto flex items-center justify-evenly w-[1109.83px] py-[32px]   border-b border-[#FFFFFF]/20">
 
       
       <Image src="/audiophile-logo.png" alt="Brand Logo" width={143} height={25} />
 
-      <ul className="flex tracking-[2px] w-[429px]  text-[13px] flex-row gap-4 font-bold">
+      <ul className="flex tracking-[2px]  w-[429px]  text-[13px] flex-row gap-4 font-bold">
         <Link href="/home">
-          <li className="">HOME</li>
+          <li className="hover:text-[#D87D4A] transition-colors duration-300">HOME</li>
         </Link>
 
         <Link href="/headphones">
-          <li>HEADPHONES</li>
+          <li className="hover:text-[#D87D4A] transition-colors duration-300">HEADPHONES</li>
         </Link>
         <Link href="/speaker">
-          <li>SPEAKERS</li>
+          <li className="hover:text-[#D87D4A] transition-colors duration-300">SPEAKERS</li>
         </Link>
         <Link href="/earphones">
-          <li>EARPHONES</li>
+          <li className="hover:text-[#D87D4A] transition-colors duration-300">EARPHONES</li>
         </Link>
       </ul>
 
@@ -33,7 +33,7 @@ export default function Header() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-[23px] h-[20px]"
+          className="w-[23px] h-[20px] hover:text-[#D87D4A] transition-colors duration-300"
           >
           <path
             strokeLinecap="round"
