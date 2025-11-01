@@ -3,6 +3,8 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
 
 const manrope = Manrope({
   subsets: ['latin'],
@@ -22,10 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} antialiased`}
+        className={`${manrope.variable} flex flex-col min-h-screen antialiased`}
       >
         <Header />
-        <Providers>{children}</Providers>
+        <Providers>
+          <main className="flex-grow">{children}</main>
+          </Providers>
+        <Footer />
       </body>
     </html>
   );
