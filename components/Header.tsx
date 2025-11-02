@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 export default function Header() {
   return (
-    <div className="container  fixed z-10 bg-[#0E0E0E]  text-[#FFFFFF] ">
+    <div className="fixed left-1/2 top-0 -translate-x-1/2 z-10 w-full max-w-[1400px] bg-[#0E0E0E] text-[#FFFFFF]">
 
-      <div className="mx-auto flex items-center justify-evenly w-[1109.83px] py-[32px]   border-b border-[#FFFFFF]/20">
+      <div className="mx-auto flex items-center justify-between w-[1109.83px] py-[32px]   border-b border-[#FFFFFF]/20">
 
       
       <Image src="/audiophile-logo.png" alt="Brand Logo" width={143} height={25} />

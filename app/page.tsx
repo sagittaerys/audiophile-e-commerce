@@ -119,7 +119,7 @@ export default function Home() {
         </div>
 
         {/* next */}
-        <div className="mt-40 h-[588px] flex justify-between items-center">
+        <div className="my-40 h-[588px] flex justify-between items-center">
           <div className="max-w-[445px] h-[295px] flex flex-col justify-between">
             <h2 className="text-[40px] text-[#000000] leading-[44px] tracking-[1.43px] font-bold ">
               BRINGING YOU THE <span className="text-[#D87D4A]">BEST </span>{" "}
