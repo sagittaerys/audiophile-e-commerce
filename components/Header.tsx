@@ -10,7 +10,7 @@ export default function Header() {
    const [isOpen, setIsOpen] = useState(false);
 // 1109.83px
   return (
-    <div className="fixed left-1/2 border border-red-300 top-0 -translate-x-1/2 z-10 w-full max-w-[1400px] bg-[#0E0E0E] text-[#FFFFFF]">
+    <div className="fixed left-1/2  top-0 -translate-x-1/2 z-10 w-full max-w-[1400px] bg-[#0E0E0E] text-[#FFFFFF]">
 
       <div className="mx-auto flex  items-center justify-between w-[88%] py-[32px]  border-b border-[#FFFFFF]/20">
 
@@ -24,7 +24,10 @@ export default function Header() {
               {isOpen ? <IoCloseSharp size={24} /> : <IoMdMenu size={24} />}
       </button>
       
+      <Link href="/">
+      
       <Image src="/audiophile-logo.png" alt="Brand Logo" width={143} height={25} />
+      </Link>
 
     </div>
 
