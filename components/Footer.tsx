@@ -6,8 +6,9 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full flex flex-col justify-between h-[365px] container px-20 text-[#FFFFFF] py-10 bg-[#101010] ">
-      <div className="flex items-center justify-between py-8">
+    <footer className="w-full flex flex-col justify-between lg:h-[365px] md:h-[400px] md:w-[768px] container md:px-10 lg:px-20 text-[#FFFFFF] py-10 bg-[#101010] ">
+
+      <div className="flex md:flex-col md:py-4 md:gap-4  lg:items-center lg:justify-between lg:py-8">
         <Image
           src="/audiophile-logo.png"
           alt="Brand Logo"
@@ -15,7 +16,7 @@ export default function Footer() {
           height={25}
         />
 
-        <ul className="flex tracking-[2px] text-[13px] flex-row gap-4 font-bold">
+        <ul className="flex tracking-[2px] md:w-[429px] text-[13px] flex-row gap-4 font-bold">
           <Link href="/home">
             <li className="hover:text-[#D87D4A] transition-colors duration-300">
               HOME
@@ -40,13 +41,46 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div className="flex justify-between  h-[100px]">
-        <p className="w-[540px] text-[#FFFFFF]/50 text-[15px] leading-[25px]">
+      <div className="flex justify-between md:flex-col  h-[100px]">
+        <p className="lg:w-[540px] md:w-full text-[#FFFFFF]/50 text-[15px] leading-[25px]">
           Audiophile is an all in one stop to fulfill your audio needs. We're a
           small team of music lovers and sound specialists who are devoted to
           helping you get the most out of personal audio. Come and visit our
           demo facility - we’re open 7 days a week.
         </p>
+
+     
+        <div className="md:hidden flex flex-col justify-end">
+          <div className="flex items-center gap-5 justify-end w-[540px] ">
+            <Link
+              className="hover:text-[#D87D4A] text-white transition-colors duration-300"
+              href="http://www.github.com/sagittaerys"
+            >
+              <IoLogoFacebook className="w-[24px] h-[24px]" />
+            </Link>
+
+            <Link
+              className="hover:text-[#D87D4A] text-white transition-colors duration-300"
+              href="https://x.com/sagittaric?s=21"
+            >
+              <FaTwitter className="w-[24px] h-[24px]" />
+            </Link>
+
+            <Link
+              className="hover:text-[#D87D4A] text-white transition-colors duration-300"
+              href="https://www.instagram.com/sagittaerys_?igsh=MTkxbm5xd3NrZGVobA%3D%3D&utm_source=qr"
+            >
+              <FaInstagram className="w-[24px] h-[24px]" />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-between">
+        <p className="text-[#FFFFFF]/50 text-[15px] leading-[25px]">
+          Copyright 2021. All Rights Reserved
+        </p>
+
 
         <div className="flex flex-col justify-end">
           <div className="flex items-center gap-5 justify-end w-[540px] ">
@@ -74,11 +108,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div>
-        <p className="text-[#FFFFFF]/50 text-[15px] leading-[25px]">
-          Copyright 2021. All Rights Reserved
-        </p>
-      </div>
+     
     </footer>
   );
 }
