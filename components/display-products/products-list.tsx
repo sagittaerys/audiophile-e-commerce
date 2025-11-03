@@ -6,11 +6,11 @@ import Image from "next/image";
 
 export default function ProductList() {
   return (
-    <div className="grid md:grid-cols-3 gap-10 md:h-[217px]  lg:h-[284px]">
+    <div className="grid md:grid-cols-3 md:w-[689px] lg:justify-between gap-10 my-26 mx-auto md:h-[217px] h-[683px] w-[327px] lg:w-[100%] lg:gap-23    lg:h-[284px] ">
       {products.map((product) => (
         <div
           key={product.id}
-          className="relative bg-[#F1F1F1] shadow-md rounded-2xl lg:w-[350px] md:w-[223px] lg:h-[204px] md:h-[165px] flex flex-col items-center justify-end"
+          className="relative bg-[#F1F1F1] shadow-md rounded-2xl lg:w-[350px] w-[327px] h-[165px] md:w-[223px] lg:h-[204px] md:h-[165px] flex flex-col items-center justify-end"
         >
           {/* Floating Image */}
           <div className="absolute md:w-[84px] md:h-[101px] lg:w-[121.49px] lg:h-[146px] -top-16">

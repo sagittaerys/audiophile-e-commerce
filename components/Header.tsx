@@ -12,10 +12,10 @@ export default function Header() {
   return (
     <div className="fixed left-1/2  top-0 -translate-x-1/2 z-10 w-full max-w-[1400px] bg-[#0E0E0E] text-[#FFFFFF]">
 
-      <div className="mx-auto flex  items-center justify-between w-[88%] py-[32px]  border-b border-[#FFFFFF]/20">
+      <div className="mx-auto flex   items-center justify-between w-[88%] py-[32px]  border-b border-[#FFFFFF]/20">
 
     {/* hamburger icon on tablets and mobiles */}
-    <div className="flex items-center gap-4 ">
+    <div className="flex items-center gap-15  ">
       <button
               onClick={() => setIsOpen(!isOpen)}
               className="lg:hidden p-2 rounded-md"
@@ -31,7 +31,7 @@ export default function Header() {
 
     </div>
 
-      <ul className="lg:flex lg:tracking-[2px]  md:hidden  lg:w-[429px]  lg:text-[13px] lg:flex-row lg:gap-4 lg:font-bold">
+      <ul className="lg:flex lg:tracking-[2px]   hidden  lg:w-[429px]  lg:text-[13px] lg:flex-row lg:gap-4 lg:font-bold">
         <Link href="/home">
           <li className="hover:text-[#D87D4A] transition-colors duration-300">HOME</li>
         </Link>
